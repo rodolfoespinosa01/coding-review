@@ -1,19 +1,12 @@
-// Exercise 1; Write a javascript program to check two numbers and
-// return true if one of the number is 100 or if the sum of the two numbers is 100
+// Tic Tac Toe done in node
+const rocks = "rocks";
+const paper = "papers";
+const scissors = "scissors";
 
-// function checkAndReturn(num1, num2) {
-//   return num1 === 100 || num2 === 100 || num1 + num2 === 100;
-// }
-// let answer = checkAndReturn(100, 42);
+const weapons = [rocks, paper, scissors];
 
-// console.log(answer);
+const randomNumber = Math.floor(Math.random() * 3);
 
-// Write a javascript program to get the extension of a filename
+computersChoice = weapons[randomNumber];
 
-function getFileExt(str) {
-  return str.slice(str.lastIndexOf("."));
-}
-
-// const getFileExt = (str) => str.slice(str.lastIndexOf("."));
-
-console.log(getFileExt("webpack.config.js"));
+console.log(computersChoice);
